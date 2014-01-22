@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html Lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="acordion" id="acordion2">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a href="#collapseUno" class="accordion-toggle" data-toggle="collapse"
+						data-parent="#acordion2">Clic para expandir</a>
+					</div>
+					<div id="collapseUno" class="accordion-body collapse" style="height:0px;">
+						<div class="accordion-inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quidem, modi nesciunt iusto odio eaque aut quibusdam iste error illum reprehenderit aliquam laborum ratione. Ad, harum dolorum et blanditiis placeat.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a href="#collapseDos" class="accordion-toggle" data-toggle="collapse"
+						data-parent="#acordion2">Clic para expandir parte 2</a>
+					</div>
+					<div id="collapseDos" class="accordion-body collapse" style="height:0px;">
+						<div class="accordion-inner">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eos, aut iusto architecto rem obcaecati voluptatibus commodi molestias. Possimus, ad dolores amet eaque fugiat! Ad ducimus perspiciatis ut nihil vitae.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap-collapse.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//$('.collapse').collapse('toggle');
+			});
+		</script>
+	</body>
+	</html>

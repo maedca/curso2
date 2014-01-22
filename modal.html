@@ -1,0 +1,70 @@
+<html>
+<html Lang="en">
+	<head>
+		<title>VENTANA MODAL</title>
+		<meta name="description" content="creating Modal window with Twitter Bootstrap">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2>Ejemlo de ventana Modal</h2>
+			<div id="example" class="modal hide fade in" style="display:none; ">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">X</a>
+					<h3>Cabecera de la ventana</h3>
+				</div>
+				<div class="modal-body">
+					<h4>Texto de la ventana</h4>
+					<p>Mas texto en la ventana</p>
+				</div>
+				<div class="modal-footer">
+					<a href="index.html" class="btn btn-success">Guardar</a>
+					<a href="#" class="btn" data-dismiss="modal">Cerrar</a>
+				</div>
+			</div>
+			<p><a data-toggle="modal" href="#example" class="btn btn-primary btn-large">
+				Abrir ventana modal</a></p>
+
+				<div class="row">
+					<a href="" id="tooltip1" rel="tooltip" title="primer tooltip">Explicacion</a>
+				</div>
+				<br>
+
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet,<a href="" id="tooltip2" rel="tooltip" title="importante">consectetur</a> adipisicing elit.<a href="" id="tooltip3" rel="tooltip" title="indispensable">Autem</a>, commodi, <a href="" id="tooltip4" rel="tooltip" title="sin falta">nihil</a>, perferendis ipsa vitae illum <a href="" id="tooltip5" rel="tooltip" title="muy importante">accusantium</a> nemo ratione minima dolore eaque possimus ut minus at error <a href="" id="tooltip6" rel="tooltip" title="no se debe olvidar">eligendi</a> sit necessitatibus totam!</p>
+				</div>
+
+
+				<div class="row">
+					<div class="well">
+						<a href="#" id="item" class="btn btn-primary">HOLA SR. ROBERT</a>
+					</div>
+				</div>
+		</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+	<script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+	<script type="text/javascript" src="js/bootstrap-popover.js"></script>
+	<script type="text/javascript">	
+		$(function(){
+			$('.dropdown-toggle').dropdown();
+			$('#tooltip1').tooltip();
+			$('#tooltip2').tooltip();
+			$('#tooltip3').tooltip();
+			$('#tooltip4').tooltip();
+			$('#tooltip5').tooltip();
+			$('#tooltip6').tooltip();
+			$('#item').popover({
+				placement: 'right',
+				html: true,
+				trigger: 'hover',
+				title: 'Titulo popover',
+				content: 'Esto es contenido<br>esto <b>tambien</b>'
+			});
+		});
+	</script>
+	</body>
+	</html>

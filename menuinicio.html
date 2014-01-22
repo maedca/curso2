@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html Lang="en">
+	<head>
+		<title>Frameworks</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css"  media="screen">
+
+	</head>
+	<style>
+		.recuadro{
+			border:solid 1px black;
+		}
+	</style>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<ul class="nav nav-pills"> <!--nav-stacked nav-tabs nav-pills-->
+					<li class="primero"><a href="">Inicio</a></li>
+					<li class="segundo"><a href="">Fotos</a></li>
+					<li class="tercero disabled"><a href="">Videos</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	#(document).ready(function(){
+		$('.dropdown-toggle').dropdown();
+		$('.primero').addClass('active');
+		$('.segundo').click(function(){
+
+			$('.primero').removeClass('active');
+			$('.segundo').addClass('active');
+
+		});
+	});
+	</script>
+	</body>
+	</html>
